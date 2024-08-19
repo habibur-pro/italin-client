@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.banner-bg {
+    /* background: linear-gradient(to top, #000000, transparent), linear-gradient(to right, rgb(9, 229, 229, 0.1), rgb(142, 250, 109, 0.1)); */
+    background: transparent;
+    /* position: absolute; */
+}
+
+.btn {
+    border-radius: 1px 20px 1px 20px;
+    @apply bg-green-600 w-full py-3 font-semibold
+}
+
+.btn-two {
+    border-radius: 1px 20px 1px 20px;
+    @apply bg-green-600 w-full py-2 font-semibold
+}
+
+.btn:hover, .btn-two:hover {
+    transition: all 50ms ease-in;
+    border-radius: 5px;
+}
+
+
+.gradient-text {
+    background: linear-gradient(to bottom, #09e5e5, #8efa6d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.card {
+    border: 1px solid #09e5e5;
+    border-radius: 0 30px 0 30px;
+}
+
+.card:hover {
+    background: linear-gradient(45deg, #09e5e5, #8efa6d);
+}
+
+.input-box {
+    border: 1px solid #09e5e5;
+    border-radius: 5px;
+    @apply w-full px-2 py-1 focus:outline-none text-black
+}
+
+.input-box:focus {
+    border: 1px solid #53d32c;
+}
+
+.submit-btn {
+    background: linear-gradient(to bottom, #09e5e5, #8efa6d);
+    border: 1px solid #8efa6d;
+    border-radius: 0 15px 0 15px;
+    @apply px-8 py-2 font-semibold cursor-pointer my-3 capitalize
+}
+.submit-btn:hover {
+    background: linear-gradient(to top, #09e5e5, #8efa6d);
+    
+}
